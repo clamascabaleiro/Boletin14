@@ -20,7 +20,7 @@ public class Boletin14_1 {
         try{
             do{
                 grados = Integer.parseInt(JOptionPane.showInputDialog("Introduzca los grados"));
-            }while (grados < 80);
+            }while (grados > 80);
             
             JOptionPane.showMessageDialog(null, "Reamur = " + conversor1.centigradosAReamur(grados)+ " °R ");
             JOptionPane.showMessageDialog(null, "Fahrenheit = " + conversor1.centigradosAFharenheit(grados)+ " °F ");
