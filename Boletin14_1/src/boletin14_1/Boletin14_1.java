@@ -15,20 +15,18 @@ public class Boletin14_1 {
        
         ConversorTemperaturas conversor1 = new ConversorTemperaturas();
         
-        float grados;
-        
-        try{
-            do{
-                grados = Integer.parseInt(JOptionPane.showInputDialog("Introduzca los grados"));
-            }while (grados > 80);
+       try {
             
-            JOptionPane.showMessageDialog(null, "Reamur = " + conversor1.centigradosAReamur(grados)+ " °R ");
-            JOptionPane.showMessageDialog(null, "Fahrenheit = " + conversor1.centigradosAFharenheit(grados)+ " °F ");
-        } catch (TemperaturaErradaExcepcion ex) {
+            float grados = Integer.parseInt(JOptionPane.showInputDialog("Añade los centígrados"));
+            JOptionPane.showMessageDialog(null,"Fharenheir: " + conversor1.centigradosAFharenheit(grados));
+            JOptionPane.showMessageDialog(null,"Reamur: " + conversor1.centigradosAReamur(grados));
             
-            JOptionPane.showMessageDialog(null, ex.getMessage());
+        } catch(TemperaturaErradaExcepcion e1) {
+            
+            JOptionPane.showMessageDialog(null,e1.getMessage());
         }
         
     }
+        
 
 }
