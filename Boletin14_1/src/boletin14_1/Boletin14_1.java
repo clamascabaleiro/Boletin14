@@ -18,8 +18,8 @@ public class Boletin14_1 {
        try {
             
             float grados = Integer.parseInt(JOptionPane.showInputDialog("Añade los centígrados"));
-            JOptionPane.showMessageDialog(null,"Fharenheit : " + conversor1.centigradosAFharenheit(grados) + "°F");
-            JOptionPane.showMessageDialog(null,"Reamur : " + conversor1.centigradosAReamur(grados) + "°R");
+            JOptionPane.showMessageDialog(null,"Fharenheit : " + conversor1.centigradosAFharenheit(grados) + " °F");
+            JOptionPane.showMessageDialog(null,"Reamur : " + conversor1.centigradosAReamur(grados) + " °R");
             
         } catch(TemperaturaErradaExcepcion ex) {
             
