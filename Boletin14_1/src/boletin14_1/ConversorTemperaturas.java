@@ -12,9 +12,9 @@ public class ConversorTemperaturas {
         
         float fharenheit;
             
-        if(centigrados < 80){
+        if(centigrados < grados){
             
-            throw new TemperaturaErradaExcepcion();
+            throw new TemperaturaErradaExcepcion("La temperatura es < que 80ºC");
         } else {
             
             fharenheit = (float) (9.0 / 5.0 * centigrados + 32.4);
@@ -27,9 +27,9 @@ public class ConversorTemperaturas {
         
         float reamur = 0;
         
-        if(centigrados < 80){
+        if(centigrados < grados){
             
-            throw new TemperaturaErradaExcepcion();
+            throw new TemperaturaErradaExcepcion("La temperatura es < 80ºC");
         } else{
             
             reamur = (float) (4.0 / 5.0 * centigrados);

@@ -6,8 +6,8 @@ package boletin14_1;
  */
 public class TemperaturaErradaExcepcion extends Exception {
 
-    public TemperaturaErradaExcepcion() {
-        super("A temperatura non pode ser < de 80º C");
+    public TemperaturaErradaExcepcion(String mensaje) {
+        super(mensaje);
     }
 
 
