@@ -6,15 +6,15 @@ package boletin14_1;
  */
 public class ConversorTemperaturas {
 
-    final float grados = 80;
+    final float GRADOS = 80;
 
     public float centigradosAFharenheit(float centigrados) throws TemperaturaErradaExcepcion {
         
         float fharenheit;
             
-        if(centigrados < grados){
+        if(centigrados < GRADOS){
             
-            throw new TemperaturaErradaExcepcion("La temperatura es < que 80ºC");
+            throw new TemperaturaErradaExcepcion("La temperatura es < que " + GRADOS );
         } else {
             
             fharenheit = (float) (9.0 / 5.0 * centigrados + 32.4);
@@ -27,9 +27,9 @@ public class ConversorTemperaturas {
         
         float reamur = 0;
         
-        if(centigrados < grados){
+        if(centigrados < GRADOS){
             
-            throw new TemperaturaErradaExcepcion("La temperatura es < 80ºC");
+            throw new TemperaturaErradaExcepcion("La temperatura es < que " + GRADOS);
         } else{
             
             reamur = (float) (4.0 / 5.0 * centigrados);
